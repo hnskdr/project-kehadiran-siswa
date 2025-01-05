@@ -7,10 +7,10 @@ class DaftarMahasiswa extends StatelessWidget {
 
   @override
   Widget build(BuildContext context) {
-    final provider = Provider.of<KehadiranProvider>(context); //Mengakses Provider
+    final provider = Provider.of<KehadiranProvider>(context); 
 
     return Scaffold(
-      appBar: AppBar(title: const Text('Presensi Mahasiswa'),
+      appBar: AppBar(title: const Text('Kehadiran Mahasiswa'),
       centerTitle: true),
       body: Column(
         children: [
@@ -31,7 +31,7 @@ class DaftarMahasiswa extends StatelessWidget {
           Padding(padding: const EdgeInsets.all(8.0),
           child: ElevatedButton(
               onPressed: provider.saveKehadiran,
-              child: const Text('simpan'),
+              child: const Text('Simpan Presensi'),
           ),
           ),
         ],
